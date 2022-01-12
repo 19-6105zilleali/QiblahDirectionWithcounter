@@ -92,13 +92,13 @@ void Output(MagnetometerRaw raw, MagnetometerScaled scaled, float heading, float
    Serial.print(raw.ZAxis);
    Serial.print("   \tScaled:\t");
 
-   lcd.print("Raw:\t");
-   lcd.print(raw.XAxis);
-   lcd.print("   ");   
-   lcd.print(raw.YAxis);
-   lcd.print("   ");   
-   lcd.print(raw.ZAxis);
-   lcd.print("   \tScaled:\t");
+//    lcd.print("Raw:\t");
+//    lcd.print(raw.XAxis);
+//    lcd.print("   ");   
+//    lcd.print(raw.YAxis);
+//    lcd.print("   ");   
+//    lcd.print(raw.ZAxis);
+//    lcd.print("   \tScaled:\t");
    
    Serial.print(scaled.XAxis);
    Serial.print("   ");   
@@ -106,11 +106,11 @@ void Output(MagnetometerRaw raw, MagnetometerScaled scaled, float heading, float
    Serial.print("   ");   
    Serial.print(scaled.ZAxis);
 
-   lcd.print(scaled.XAxis);
-   lcd.print("   ");
-   lcd.print(scaled.YAxis);   
-   lcd.print("   ");
-   lcd.print(scaled.ZAxis);   
+//    lcd.print(scaled.XAxis);
+//    lcd.print("   ");
+//    lcd.print(scaled.YAxis);   
+//    lcd.print("   ");
+//    lcd.print(scaled.ZAxis);   
  
    Serial.print("   \tHeading:\t");
    Serial.print(heading);
@@ -118,6 +118,13 @@ void Output(MagnetometerRaw raw, MagnetometerScaled scaled, float heading, float
    Serial.print(headingDegrees);
    Serial.println(" Degrees   \t");
   //delay(1000);
+
+//    lcd.print("   \tHeading:\t");
+//    lcd.print(heading);
+//    lcd.print(" Radians   \t");   
+//    lcd.print(headingDegrees);
+//    lcd.print(" Degrees   \t");
+
   if((headingDegrees >=1)&(headingDegrees <= 45)  )
   digitalWrite(ledpin,HIGH);
   else 
